@@ -86,7 +86,7 @@ readonly class YamlPermissionSetsProvider implements PermissionSetsProviderInter
             ->files()
             ->sortByName()
             ->depth(0)
-            ->name(['/^[a-z0-9\-_]+\.yaml$/i'])
+            ->name(['/^[a-z0-9._-]+\.yaml$/i'])
             ->in($path);
 
         /**
